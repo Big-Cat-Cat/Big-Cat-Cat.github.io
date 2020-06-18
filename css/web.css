@@ -1,0 +1,152 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.main::-webkit-scrollbar{width: 0;}
+.main{
+	overflow-y: auto;
+	margin-top: 60px;
+	margin-left: 40px;
+	animation: main 1s linear 1 forwards;
+	}
+	
+.right::-webkit-scrollbar{width: 0;}	
+.right{
+	float: right;
+	position: absolute;
+	top: 60px;
+	right: 40px;
+	animation: right 1s 1s linear 1 forwards;
+	overflow-y: auto;
+}
+
+.bottom{
+	margin: 20px auto;
+	text-align: center;
+	animation: bottom 1s 2s linear 1 forwards;
+}
+
+button{
+	width: 100px;
+	position: relative;
+	top: 10px;
+	margin: 0 70px;
+	background-color: rgba(255,255,255,.3);
+	border-radius: 10px;
+	animation:n 5s linear 1 forwards;
+}
+button:hover{
+	background-color: rgba(255,255,255,1);
+}
+
+.text-item{
+	position: relative;
+	top: 30px;
+	margin: 0 75px;
+	text-align: center;
+	color: #FFFFFF;
+	animation: n 2s  ease 1 forwards;
+}
+.item-image::-webkit-scrollbar{width: 0 !important }
+.item-image{
+	position: relative;
+	top: 10px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 1000px;
+	height: 300px;
+	border-radius: 30px;
+	opacity: 70%;
+}
+
+.text-title{
+	font-size: 30px;
+}
+
+.text-desc{
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.stroy{
+	width: 1000px;
+	margin: 60px auto;
+	line-height: 25px;
+}
+
+.cast{
+	position: relative;
+	top: 30px;
+	text-align: left;
+}
+
+.cast2{
+	float: right;
+	position: relative;
+	top: -220px;
+	right: 200px;
+	text-align: left;
+	list-style-type: none;
+}
+
+#role{
+	margin:10px 20px;
+	animation: n 5s  ease 1 forwards;
+}
+
+@keyframes main{
+	from{
+		width: 200px; 
+		height: 200px; 
+		background-color: rgba(0,0,0,1);
+		border-radius: 10px;
+	}
+	to{
+		width: 1200px;
+		height: 800px;
+		background-color: rgba(0,0,0,0.3);
+		border-radius: 30px;
+	}
+}
+
+@keyframes right{
+	from{
+		width: 200px;
+		height: 200px; 
+		background-color: rbga(0,0,0,1);
+		border-radius: 10px;
+	}
+	to{
+	width: 600px;
+	height: 800px;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 30px;
+	}
+}
+
+@keyframes bottom{
+	from{
+	width:0px;
+	height: 40px;
+	background-color:rgba(0,0,0,1);
+	border-radius: 10px;}
+	to{
+	width:1830px;
+	height: 40px;
+	background-color:rgba(0,0,0,0.3);
+	border-radius: 30px;
+	}
+}
+
+@keyframes text{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+@keyframes n{
+	0%{opacity: 0;}
+	50%{opacity: 0;}
+	100%{opacity: 1}
+}

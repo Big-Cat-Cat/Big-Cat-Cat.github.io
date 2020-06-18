@@ -1,0 +1,53 @@
+body{
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	animation: fadein 3s linear 1;
+}
+
+#login-box
+{	
+	width: 30%;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 15%;
+	text-align: center;
+	background: #00000080;
+	padding: 20px 50px;
+	border-radius: 1.875rem;
+}
+
+#login-box h1{
+	color: #FFFFFF;
+}
+
+#login-box .from .item{
+	margin-top: 15px;
+}
+
+#login-box .from .item input{
+	width: 180px;
+	font-size: 18px;
+	border: 0;
+	border-bottom: 2px solid #FFFFFF;
+	padding: 5px 10px;
+	background: #ffffff00;
+	color: #fff;
+}
+
+#login-box button{
+	margin-top: 15px;
+	width: 180px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #FFFFFF;
+	background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+	border: 0;
+	border-radius: 15px;
+}
+
+@keyframes fadein{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
